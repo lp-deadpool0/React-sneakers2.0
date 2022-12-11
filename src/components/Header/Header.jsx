@@ -50,6 +50,8 @@ const TotalPrice = styled.span`
 `;
 
 export const Header = ({ totalPrice = 0 }) => {
+  // totalPrice - сумма товаров в корзине
+
   return (
     <Wrapper>
       <Logo>

@@ -2,12 +2,14 @@ import styled from "styled-components";
 import { GlobalStyles } from "../globalStyles";
 import { Main } from "./Main/Main";
 import { Header } from "./Header/Header";
+import { Cart } from "./Cart/Cart";
 
 const Wrapper = styled.div`
-  background: #fffff8;
+  background: #fff;
   width: 100%;
   height: 100%;
   padding: 0 20px;
+  position: relative;
 `;
 
 const Container = styled.div`
@@ -19,6 +21,7 @@ const Container = styled.div`
 export const App = () => {
   return (
     <Wrapper>
+      <Cart cartActive={false} />
       <Container>
         <Header />
         <Main />

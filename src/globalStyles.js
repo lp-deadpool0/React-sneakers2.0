@@ -41,6 +41,7 @@ body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: 'Inter', sans-serif;
+  /* overflow:hidden; */
 }
 input,
 button,
@@ -100,5 +101,16 @@ h6 {
 
 }
 
+::-webkit-scrollbar {
+  width: 7px; /* ширина для вертикального скролла */
+  height: 7px; /* высота для горизонтального скролла */
+  background-color: rgb(206 206 206 / 52%);
+}
 
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(157 157 157 / 40%);
+  border-radius: 9em;
+  box-shadow: none;
+}
 `;
